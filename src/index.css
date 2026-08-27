@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+.badge-red {
+  @apply bg-brand-red/10 text-brand-red border border-brand-red/30 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider inline-flex items-center gap-1.5;
+}
+
+.btn-primary {
+  @apply bg-brand-red hover:bg-brand-redHover text-white font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-brand-red/25 hover:shadow-brand-red/40 transition-all duration-300 transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 text-base;
+}
+
+.btn-secondary {
+  @apply bg-zinc-900 hover:bg-black text-white font-bold px-6 py-3.5 rounded-xl border border-zinc-800 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 text-base;
+}
+
+.btn-outline-red {
+  @apply bg-transparent hover:bg-brand-red/10 text-brand-red hover:text-brand-redHover border-2 border-brand-red font-bold px-6 py-3.5 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-base;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #DC2626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B91C1C;
+}
